@@ -1,0 +1,440 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
+  margin-top: 40px;
+  
+
+
+}
+.nav h1{
+  margin-right: 230px;
+}
+.nav0 input{
+  border-radius: 20px;
+  padding: 10px;
+  width: 250px;
+  border: none;
+}
+.nav0{
+  border: 1px solid gray;
+  border-radius: 20px;
+  background-color: white;
+}
+.nav1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin: 30px;
+}
+.nav1 nav ul  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  margin-right: 100px;
+}
+.nav1 nav ul li a{
+  text-decoration: none;
+  font-size: 15px;
+}
+.nav1 .nav00{
+  margin-left: 100px;
+  display: flex;
+  flex-direction: row;
+
+}
+.nav1 .nav00 a{
+  margin: 5px;
+  color: gray;
+  font-size: 15px;
+}
+.nav1 .nav00 h3{
+  color: grey;
+  font-size: 18px;
+}
+/* marquee tag */
+marquee {
+  background-color: aqua;
+  height: 60px;
+  font-size: 25px;
+}
+#click{
+  display: none;
+}
+label{
+  display: none;
+}
+/* media navbar */
+@media screen and (max-width:768px){
+label{
+  display: block;
+}
+.store .nav1 nav ul{
+  gap: 30px;
+  margin-left: 100px;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  display: none;
+  z-index: 200;
+
+
+}
+.store .nav1 nav ul a{
+  font-size: 20px;
+  color: red;
+  gap: 30px;
+  margin-right: 200px;
+  margin-left: 300px;
+
+}
+#click:checked ~ .store .nav1 nav ul{
+  display: block;
+}
+}
+
+/* media navbar mobile */
+@media screen and (max-width:425px){
+label{
+  display: block;
+}
+.store .nav1 nav ul{
+  gap: 30px;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  display: none;
+  z-index: 200;
+  margin-top: 30px;
+
+
+}
+.store .nav1 nav ul a{
+  font-size: 20px;
+  color: red;
+  gap: 30px;
+  margin-left: 30px;
+
+
+}
+#click:checked ~ .store .nav1 nav ul{
+  display: block;
+}
+}
+/* container1 */
+.heading4 h1{
+    margin-left: 100px;
+    margin-top: 50px;
+
+}
+.container1{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     gap: 30px;
+     margin: 40px;
+}
+.container1 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: gray;
+}
+.container1 .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.container1 .icon1  a{
+    padding: 10px;
+}
+.container1 .icon2  a{
+    padding: 10px;
+}
+.container1 .icon3  a{
+    padding: 10px;
+}
+
+/* detaile section */
+.detail0{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px;
+}
+.detail0 .detail{
+  border: 2px solid black;
+  width: 600px;
+  height: 900px;
+}
+.detail label{
+  display: block;
+}
+.detail .name{
+  display: flex;
+  padding: 10px;
+  margin-top: 40px;
+
+}
+.name  label{
+  padding: 10px;
+}
+.name input{
+  width: 200px;
+  padding: 10px;
+  margin: 20px;
+}
+.detail .email{
+  margin: 20px;
+}
+.email label{
+  padding: 20px;
+}
+.email input{
+  padding: 10px;
+  width: 480px;
+}
+ .detail .subject {
+  margin: 20px;
+}
+.subject label{
+  padding: 20px;
+}
+.subject input{
+  width: 480px;
+  padding: 10px;
+}
+.detail .message{
+  margin: 20px;
+
+}
+.message label{
+  padding: 20px;
+}
+.message input{
+  padding: 90px;
+  width: 480px;
+}
+.detail .btn3{
+  margin-left: 200px;
+  border: 1px solid black;
+  width: 130px;
+  border-radius: 30px;
+  padding: 10px;
+}
+.detail  a{
+  text-decoration: none;
+  color: black;
+}
+
+.detail0 .detail1{
+    border: 2px solid black;
+}
+.detail0 .detail1 iframe{
+    width: 100%;
+    height: 100%;
+}
+/* footer section */
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  margin-top: 50px;
+  height: 100%;
+}
+.contact .about p {
+  padding: 20px;
+  width: 180px;
+  font-size: 15px;
+}
+.contact .about .icon1 {
+  padding: 15px;
+}
+.contact .about .icon1 i {
+  padding: 7px;
+  font-size: 20px;
+  color: yellow;
+}
+.contact h1 {
+  color: aqua;
+  font-size: 16px;
+  margin: 20px;
+}
+.customer h2 {
+  padding: 10px;
+  font-size: 12px;
+}
+.information h2 {
+  padding: 10px;
+  font-size: 12px;
+}
+.contact .news h2 {
+  padding: 10px;
+  font-size: 12px;
+}
+.call h2 {
+  padding: 10px;
+  font-size: 12px;
+}
+/* footer */
+footer {
+  margin-left: 200px;
+  margin-top: 30px;
+
+}
+/* tablet view */
+@media screen and (max-width:768px){
+  .container1{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     gap: 50px;
+     margin: 40px;
+     flex-direction: column;
+
+}
+/* container1 */
+.heading4 h1{
+    margin-left: 200px;
+    margin-top: 50px;
+
+}
+/* detaile section */
+.detail0{
+    display: grid;
+    grid-template-columns: 1fr ;
+    margin: 30px;
+    gap: 40px;
+}
+.detail0 .detail{
+    display: grid;
+    border: 2px solid black;
+    width: 600px;
+    height: 900px;
+    margin-left: 50px;
+
+}
+}
+/* mobile view */
+@media screen and (max-width:425px){
+  .nav h1{
+  margin-right: 100px;
+}
+.nav0 input{
+  border-radius: 20px;
+  padding: 10px;
+  width: 100px;
+  border: none;
+}
+/* detaile section */
+.detail0{
+    display: grid;
+    grid-template-columns: 1fr ;
+    margin: 30px;
+    gap: 40px;
+}
+.detail0 .detail{
+    display: grid;
+    border: 2px solid black;
+    width: 300px;
+    height: 900px;
+    margin-left: 10px;
+
+}
+
+.detail0 .detail{
+  border: 2px solid black;
+  width: 300px;
+  height: 1100px;
+}
+.detail label{
+  display: block;
+}
+.detail .name{
+  display: flex;
+  padding: 10px;
+  margin-top: 40px;
+  flex-direction: column;
+
+}
+.name  label{
+  padding: 10px;
+}
+.name input{
+  width: 200px;
+  padding: 10px;
+  margin: 20px;
+}
+.detail .email{
+  margin: 20px;
+}
+.email label{
+  padding: 20px;
+}
+.email input{
+  padding: 10px;
+  width: 210px;
+}
+ .detail .subject {
+  margin: 20px;
+}
+.subject label{
+  padding: 20px;
+}
+.subject input{
+  width: 210px;
+  padding: 10px;
+}
+.detail .message{
+  margin: 20px;
+
+}
+.message label{
+  padding: 20px;
+}
+.message input{
+  padding: 90px;
+  width: 400px;
+}
+.detail .btn3{
+  margin-left: 100px;
+  border: 1px solid black;
+  width: 130px;
+  border-radius: 30px;
+  padding: 10px;
+}
+.detail  a{
+  text-decoration: none;
+  color: black;
+}
+
+/* footer section */
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  margin-top: 50px;
+  height: 100%;
+  flex-direction: column;
+}
+footer{
+  margin-left: 100px;
+}
+}
