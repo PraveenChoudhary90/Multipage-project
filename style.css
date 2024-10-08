@@ -136,7 +136,7 @@ label{
 /* parent */
 .store1 {
   background-position: center center;
-  background-image: url(pexels-pixabay-267320.jpg);
+  background-image: url("pexels-pixabay-267320.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
